@@ -1,0 +1,33 @@
+36.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,DEBUG;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Http h = new http();
+Execute Anonymous: 
+Execute Anonymous: HttpRequest request = new HttpRequest();
+Execute Anonymous: 
+Execute Anonymous: request.setEndpoint('https://mathify-developer-edition.na59.force.com/services/apexrest/math/sum?numbers=1,2,3,4');
+Execute Anonymous: request.setMethod('GET');
+Execute Anonymous: 
+Execute Anonymous: h.send(request);
+15:03:12.5 (5918283)|USER_INFO|[EXTERNAL]|005f40000027wkk|felipescgouvea@gmail.com|Fuso horário de Brasília|GMT-03:00
+15:03:12.5 (5939758)|EXECUTION_STARTED
+15:03:12.5 (5944513)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+15:03:12.5 (6615407)|CALLOUT_REQUEST|[8]|System.HttpRequest[Endpoint=https://mathify-developer-edition.na59.force.com/services/apexrest/math/sum?numbers=1,2,3,4, Method=GET]
+15:03:12.5 (99356942)|CALLOUT_RESPONSE|[8]|System.HttpResponse[Status=OK, StatusCode=200]
+15:03:12.100 (100919313)|CUMULATIVE_LIMIT_USAGE
+15:03:12.100 (100919313)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:03:12.100 (100919313)|CUMULATIVE_LIMIT_USAGE_END
+
+15:03:12.5 (100978817)|CODE_UNIT_FINISHED|execute_anonymous_apex
+15:03:12.5 (101746761)|EXECUTION_FINISHED

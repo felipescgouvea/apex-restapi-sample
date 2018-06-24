@@ -1,0 +1,2 @@
+
+while(true)MathifyTest.callSum();
